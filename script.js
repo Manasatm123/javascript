@@ -5,6 +5,8 @@ let str ='';
 for(let i=0; i<=10; i++){
     console.log(i)
 }
+console.log("\n\n\n\n\n\n")
+
 
 
 
@@ -16,6 +18,8 @@ for (let i=1; i<=10; i++){
     sum = sum + i
 }
 console.log ("sum :",sum)
+console.log("\n\n\n\n\n\n")
+
 
 
 //print even numbers between 1 and 20
@@ -26,6 +30,8 @@ for(i=1; i<=20; i++){
         console.log(i)
     }
 }
+console.log("\n\n\n\n\n\n")
+
 
 
 //count the numbers of vowels in a string
@@ -42,6 +48,36 @@ for( let i=0; i<=strlen; i++)
     
 }
 console.log("no of vowels = ",a)
+console.log("\n\n\n\n\n\n")
+
+
+
+//check if a number is prime
+
+{
+    console.log("\n\n\n\n");
+    
+    let a = 20;
+    let prime = true;
+    if (a <= 1) {
+        prime = false;
+    } else {
+        for (let i = 2; i < a; i++) {
+            if (a % i === 0) {
+                prime = false;
+                break;
+            }
+        }
+    }
+    if (prime) {
+        console.log(`${a} is prime number`);
+    } else {
+        console.log(`${a} is not prime number`);
+    }
+}
+console.log("\n\n\n\n\n\n")
+
+
 
 
 //pattern reverse
@@ -59,6 +95,21 @@ for (let i = 5; i >= 0; i--){
      
 }
 console.log(str)
+}
+console.log("\n\n\n\n\n\n")
+
+
+
+{
+    let str ='';
+    for (let i=1; i<=5; i++){
+
+        for (let j=1; j<=i ; j++){
+            str = str + j;
+        }
+        str = str + '\n'
+    }
+    console.log(str)
 }
 
 
