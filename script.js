@@ -82,11 +82,11 @@ console.log("\n\n\n\n\n\n\n\n\n")
 
 let str = '';
 
-for (let i = 0; i < 10; i++){
+for (let i = 5; i >= 0; i++){
 
 
 
-    for(let  j = 0; j <= i; j++){
+    for(let  j = 5; j >= i; j++){
         str = str + '*'
     }
      str = str + '\n'
@@ -96,5 +96,63 @@ console.log(str)
 
 
 
+// functions
+{
+function ToDo (){
+    console.log ("fisrt line")
+    console.log("second line")
+    console.log(" third line")
+}
+
+let flag = true;
+
+if(flag){
+    ToDo();//function call
+
+}
+
+let flag1 =true;
+
+if (flag1){
+ToDo();//function call
+}
+
+//named function
+function Hello(){
+    console.log("hello world");
+}
+
+Hello();
+
+//anonymous function
+let
+}
+
+
+
+
+
+
+
+//call by value
+let a=10;
+function update(a){
+    a="new value";
+    console.log("value of a inside function",a);
+}
+update(a);
+console.log("value of a after function call",a);
+
+
+
+// call by reference
+
+let arr=[10,20,30];
+function update(arr){
+    arr[0] = "new value";
+    console.log("arr from  function",arr);
+}
+update(arr);
+console.log("value of arr after function call",arr);
 
 
