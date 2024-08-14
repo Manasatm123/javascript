@@ -160,53 +160,60 @@ console.log("\n\n\n\n\n\n")
 
 
 //count the numbers of vowels in a string  using function
-str = "my name is manasa"
-a=0;
-strlen = str.length
-for( let i=0; i<=strlen; i++)
-    
-    {
-    if(str[i]=="a" || str[i]=="A" || str[i]=="e" ||str[i]=="E" || str[i]=="i" || str[i]=="I" || str[i]=="o" || str[i]=="O" || str[i]=="u" || str[i]=="U" ){
-        a=a+1
+{
+ countVowels = function (str) {
+    a = 0;
+    strlen = str.length;
 
+    for (let i = 0; i < strlen; i++) {
+       
+        if(str[i]=="a" || str[i]=="A" || str[i]=="e" ||str[i]=="E" || str[i]=="i" || str[i]=="I" || str[i]=="o" || str[i]=="O" || str[i]=="u" || str[i]=="U" ){
+             a=a+1
     }
-    
 }
+    console.log("string",str)
+    return a;
+}
+str = "my name is manasa"
+a= countVowels(str);
 console.log("no of vowels = ",a)
-console.log("\n\n\n\n\n\n")
+}
+
+
+
 
 
 
 //check if a number is prime  using function
 
-{
-    console.log("\n\n\n\n");
+// {
     
-    let a = 20;
-    let prime = true;
-    if (a <= 1) {
-        prime = false;
-    } else {
-        for (let i = 2; i < a; i++) {
-            if (a % i === 0) {
-                prime = false;
-                break;
-            }
-        }
-    }
-    if (prime) {
-        console.log(`${a} is prime number`);
-    } else {
-        console.log(`${a} is not prime number`);
-    }
-}
-console.log("\n\n\n\n\n\n")
+//     console.log("\n\n\n\n");
+//     function Prime(a){
+//     if (a <= 1) {
+//        return false;
+//     } 
+//         for (let i = 2; i < a; i++) {
+//             if (a % i === 0) {
+//                 return false;
+//                 break;
+//             }
+//         }
+//     }
+//     if (prime) {
+//         console.log(`${a} is prime number`);
+//     } else {
+//         console.log(`${a} is not prime number`);
+//     }
+// }
+// console.log("\n\n\n\n\n\n")
 
 
 
 
 //pattern reverse  using function
 {
+    pattern = function(){
 let str = '';
 
 for (let i = 5; i >= 0; i--){
@@ -221,11 +228,14 @@ for (let i = 5; i >= 0; i--){
 }
 console.log(str)
 }
+}
+pattern();
 console.log("\n\n\n\n\n\n")
 
 
 
 {
+    function Pattern2(){
     let str ='';
     for (let i=1; i<=5; i++){
 
@@ -235,6 +245,8 @@ console.log("\n\n\n\n\n\n")
         str = str + '\n'
     }
     console.log(str)
+}
+Pattern2 ();
 }
 
 
