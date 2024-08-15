@@ -155,4 +155,84 @@ function update(arr){
 update(arr);
 console.log("value of arr after function call",arr);
 
+{
+    function outerFunction(){
+        let outerVariable = "i am from outerFunction "
+
+        function innerFunction (){
+            function innerFunction1(){
+                return outerVariable;
+            }
+            return innerFunction1;
+
+        }
+        return innerFunction;
+    }
+    let result = outerFunction();
+    console.log("result :",result);
+
+    let result1 = result();
+    console.log("result1:",result1)
+
+    let result2 = result1();
+    console.log("result2 :",result2);
+}
+
+
+//dom methods
+{
+    let text = document.getElementById("text");
+    console.log("text : ",text);
+    console.log("tex6t content :",text.textContent)
+    text.textContent = "text  from javascript";
+
+
+    let container = document.getElementsByClassName('contanier');
+    console.log("conttainer[0] :",container[0]);
+    console.log("conttainer[1] :",container[1]);
+
+    let paragraph = document.getElementsByClassName('p')
+    console.log("paragraph :",paragraph);
+
+    console.log("pharagrtaph [0] :",paragraph[0]);
+    console.log("pharagrtaph [1] :",paragraph[1]);
+
+
+    let services = document.querySelector('.container #box ul li#services')
+    console.log("services :",services);
+}
+
+
+//event handlers
+let btn = document.getElementById('btn');
+console.log("btn : ",btn)
+
+let inp = document.getElementById('inp');
+console.log("inp : ",inp)
+
+btn.addEventListener('click',function (){
+    console.log("button clicked");
+});
+
+btn.addEventListener('mouseover',function (){
+    console.log("mouseover event");
+});
+
+btn.addEventListener('click',function (){
+    console.log("button clicked");
+});
+
+btn.addEventListener('click',function (){
+    console.log("button clicked");
+});
+
+btn.addEventListener('click',function (){
+    console.log("button clicked");
+});
+
+btn.addEventListener('click',function (){
+    console.log("button clicked");
+});
+
+
 
