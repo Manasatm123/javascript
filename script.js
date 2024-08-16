@@ -235,4 +235,76 @@ btn.addEventListener('click',function (){
 });
 
 
+//math function
+console.log(Math.sqrt(16));
+console.log(Math.round(10.4));
+console.log(Math.round(10.5));
+console.log(Math.ceil(10.2));
+console.log(Math.ceil(10.8));
+console.log(Math.floor(10.7));
+console.log(Math.floor(10.2));
+console.log(Math.floor(10.7));
+console.log(Math.abs(-10));
+console.log(Math.abs(10));
+console.log(Math.max(10,20,30));
+console.log(Math.min(10,20,30));
+console.log(Math.pow(10,20));
+
+
+
+//timer functions
+
+setTimeout(function (){
+    console.log("time out")
+},5000)
+
+setTimeout(function (){
+    console.log("time in")
+},5000)
+
+
+//rescursion
+function Counter (currentValue,limit){
+
+    if(currentValue > limit){
+        return;
+    }
+
+    console.log(currentValue);
+
+// Counter (++currentValue.limit);//recursive call
+
+//recursive call with some delay using time out
+setTimeout(() => Counter(++currentValue,limit),2000)
+}
+console(0,10);
+
+
+
+//program to show current time 
+
+function putZero(sec){
+    return sec<10?"0"+sec:sec;
+}
+
+function show(){
+    var time = document.getElementById('time');
+    var dt = new Date();
+    var hours = dt.getHours();
+
+    // if (hours>12){
+    //     ampm = "pm";
+    // }else{
+    //     ampm = "am";
+    // }
+
+    var ampm = hours>12?"am":"pm";
+
+    time.innerHTML = putZero(hours%12) + ":" + putZero(dt.getMinutes())+":"+putZero(dt.getSeconds())+ampm;
+
+    setTimeout(function (){
+        show();//recursive call
+    },1000);
+}
+show();
 
