@@ -310,4 +310,107 @@ show();
 
 
 
+console.log("\n\n\n\n\n");
+
+//speard operator
+{
+let arr = [1,2,3,4,5];
+console.log("arr :",arr);
+
+let arr1 = [...arr,6]
+console.log("arr1 : ",arr1);
+
+let obj = {
+    name : "manasa",
+    email : "manasatm150@gmail.com",
+    country : "india"
+};
+
+console.log("obj :",obj);
+
+let obj1 = {...obj,mark : 90};
+console.log("obj1 :",obj1)
+}
+
+{
+console.log("\n\n\n\n\n");
+
+//Destruvturing 
+
+let arr = [1,2,3,4,5];
+console.log("arr :",arr);
+
+let [a,b,c,d,e] = arr;
+console.log(" a ",a)
+console.log(" b ",b)
+console.log(" c ",c)
+
+let obj = {
+    name : "manasa",
+    email : "manasatm150@gmail.com",
+    country : "india",
+};
+console.log("obj :",obj);
+
+
+let{name,email,country} = obj;
+console.log("name :",name);
+console.log("email :",email);
+console.log("country :",country);
+
+}
+
+console.log("\n\n\n\n\n");
+
+//nested destructuring
+
+{
+    let matrix = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9],
+    ];
+    console.log("matrix :",matrix);
+
+    let [row1,row2] = matrix;
+    console.log("row1 : ",row1);
+    console.log("row2 :",row2);
+
+
+    let [a,b,c] = row1;
+    console.log("a :",a);
+    console.log("b :",b);
+    console.log("c :",c);
+
+
+    let [d,e,f] = row2;
+    console.log("d :",d);
+    console.log("e :",e);
+    console.log("f :",f);
+
+
+    let obj = {
+        name : "manasa",
+        email : "manasatm150@gmail.com",
+        country : "india",
+        adress : {
+            street : "street",
+            city : "city"
+        }
+
+    };
+    let {name,email,country ,adress : {street, city}} = obj;
+    console.log("name :",name);
+    console.log("email :",email);   
+    console.log("country :",country);
+    console.log("street:",street);
+    console.log("city :",city);
+
+}
+    
+
+
+
+
+
 
