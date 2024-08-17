@@ -158,6 +158,24 @@ console.log("factorial of array : ",result);
 }
 
 
+//convert a string into reverse and check it is palindrome or not
+
+str = "manasa"
+let array = str.split ('');
+
+array.reverse ();
+
+let revstr = array.join('');
+console.log(revstr)
+if (str==revstr)
+{
+    console.log("it is a palindrome")
+}else
+{
+     console.log("it is not a palindrome") 
+}
+
+
 
 
 
