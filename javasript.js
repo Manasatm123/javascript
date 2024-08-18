@@ -158,6 +158,7 @@ console.log("factorial of array : ",result);
 }
 
 
+console.log("\n\n\n\n\n\n")
 //convert a string into reverse and check it is palindrome or not
 
 str = "manasa"
@@ -174,6 +175,20 @@ if (str==revstr)
 {
      console.log("it is not a palindrome") 
 }
+
+
+console.log("\n\n\n\n\n\n")
+//to find the  multiplication table
+{
+    console.log("to find the multiplication table of the number")
+    function mul(n){
+        for(let i=1;i<=10;i++)
+            console.log(`${i} x ${n} : ` ,n*i)
+    }
+}
+n=4
+console.log("multiplication :",n)
+mul(n)
 
 
 
