@@ -407,6 +407,97 @@ console.log("\n\n\n\n\n");
     console.log("city :",city);
 
 }
+
+
+console.log("\n\n\n\n\n");
+//Array methods
+{
+let arr = [
+    {
+        name : "manasa",
+        email : "manasa@gmail.com",
+        age : 19,
+
+    },
+    {
+        name : "Sunisha",
+        email : "sunisha@gmail.com",
+        age : 20,
+    },
+    {
+        name : "farzin",
+        email : "farzin@gmail.com",
+        age : 21,
+
+    }
+];
+
+//forEach
+console.log("ForEach");
+let foreachResult = arr.forEach((element) =>{
+    console.log("element : ",element);
+    return element.age == 15;
+});
+
+console.log("forEachResult : ",foreachResult);
+
+console.log("\n\n\n\n\n");
+
+
+
+//find
+console.log("Find");
+let findvalue = arr.find((element) =>{
+    console.log("element : ",element);
+    return element.age == 15;
+});
+
+console.log("findvalue : ",findvalue);
+
+console.log("\n\n\n\n\n");
+
+
+
+
+//filter
+console.log("Find");
+let filtervalues = arr.filter((element) =>{
+    console.log("element : ",element);
+    return element.age == 15;
+});
+
+console.log("filtervalue : ",filtervalues);
+
+console.log("\n\n\n\n\n");
+
+
+
+
+//map
+console.log("map");
+let mappedvalues = arr.map((element) =>{
+    console.log("element : ",element);
+    return element.mark + 10;
+});
+
+console.log("mappedvalue : ",mappedvalues);
+
+console.log("\n\n\n\n\n");
+
+
+//reduce
+console.log("reduce");
+let sum = arr.reduce((total,element) => {
+    return total + element.mark ;
+},0);
+
+console.log("sum : ",sum);
+
+console.log("\n\n\n\n\n");
+
+}
+ 
+
     
 
 
