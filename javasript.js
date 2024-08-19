@@ -192,5 +192,217 @@ mul(n)
 
 
 
+//Q1
+console.log("\n\n\n\n\n\n\n\n\n\n")
+//Given an array of numbers, use the map method to create a new array where each number is doubled.
+{
+    console.log("Given an array of numbers, use the map method to create a new array where each number is doubled.");
+    let arr = [2,4,6,8]
+    console.log("array : ",arr);
+
+
+    let MappedArray = arr.map((element)=>{
+    return element*2;
+});
+console.log("mapped array :",MappedArray)
+}
+
+
+//Q2
+console.log("\n\n\n\n\n\n")
+//Given an array of numbers, use the filter method to create a new array containing only the even numbers.
+{
+    console.log("Given an array of numbers, use the filter method to create a new array containing only the even numbers.")
+
+    let arr = [1,3,2,6,4,8,5]
+    console.log("array : ",arr);
+
+
+    let FilteredValue = arr.filter((element)=>{
+    return element %2 ==0;
+});
+console.log("Filtered value :",FilteredValue)
+}
+
+
+
+
+//Q3
+console.log("\n\n\n\n\n\n")
+//.Given an array of numbers, use the reduce method to calculate the sum of all the numbers
+{
+    console.log(".Given an array of numbers, use the reduce method to calculate the sum of all the numbers");
+
+    let arr = [ 2,3,4,5]
+    console.log("array :",arr);
+
+    let sum = arr.reduce ((total,element )=>{
+        return total + element; 
+},0);
+console.log("sum :" ,sum)
+}
+
+
+//Q4
+console.log("\n\n\n\n\n\n")
+//Given an array of numbers, use the reduce method to find the maximum value in the array.
+{
+    console.log("Given an array of numbers, use the reduce method to find the maximum value in the array.")
+
+     arr = [3,2,5,1,9]
+     console.log("array :" ,arr);
+
+
+     let MinMax = arr.reduce((Min,Max) =>{
+        return Min > Max ? Min : Max;
+
+     },arr[0]);
+
+     console.log("Maximum value :",MinMax);
+ }
+
+
+
+
+//Q5
+console.log("\n\n\n\n\n\n")
+//.Given an array of strings, use the map method to create a new array where each string is capitalized.
+{
+    console.log(".Given an array of strings, use the map method to create a new array where each string is capitalized.");
+
+    str = ["manasa"];
+    console.log("string");
+    console.log("string :",str);
+    let mapStr = str.map((element) =>{
+        
+        return element.toUpperCase()
+    });
+    console.log("caplitaloized : ",mapStr)
+}
+
+
+
+//Q6
+console.log("\n\n\n\n\n\n")
+//.Given an array of words, use the filter method to create a new array containing only the words with a length greater than a specified value.
+{
+    console.log(".Given an array of words, use the filter method to create a new array containing only the words with a length greater than a specified value.");
+
+    arr = ["string","array","wow"];
+    console.log("array :",arr);
+
+    let specifiedLength = 5;
+    let filteredArray = arr.filter((element) =>
+    {
+        return element.length > specifiedLength;
+    });
+
+    console.log("new array :",filteredArray)
+}
+
+
+
+
+
+
+//Q7
+console.log("\n\n\n\n\n\n")
+//Given an array of numbers, use the map method to create a new array of strings indicating whether each number is even or odd.
+{
+    console.log("Given an array of numbers, use the map method to create a new array of strings indicating whether each number is even or odd.");
+
+    let arr = [1,2,3,4];
+    console.log("array :",arr);
+
+    let mappedValues = arr.map((element) => {
+        return element % 2 === 0 ? "even" : "odd";
+    });
+    console.log("string :",mappedValues);
+
+}
+
+
+//Q8
+console.log("\n\n\n\n\n\n")
+//Given an array, use the filter method to create a new array with only unique elements (remove duplicates)
+{
+    console.log("Given an array, use the filter method to create a new array with only unique elements (remove duplicates)");
+
+    let arr = [2,3,4,6,2,4,7];
+    console.log("array :",arr);
+
+    let filteredArray = arr.filter((element , index) => {
+        return arr.indexOf(element) === index ;
+    });
+    console.log ("unique element :",filteredArray)
+
+}
+
+
+
+//Q9
+console.log("\n\n\n\n\n\n")
+//Given an array of numbers, use the sort method to sort them in ascending order.
+{
+    console.log("Given an array of numbers, use the sort method to sort them in ascending order.");
+
+    let arr = [4,9,6,5,3,8,2,7,1]
+    console.log ("array : ",arr);
+
+    let SortedArray = arr.sort ((a,b ) => a-b)
+
+console.log("Sorted array ",SortedArray)
+}
+
+
+
+
+
+//Q10
+console.log("\n\n\n\n\n\n")
+//Given an array of objects with a name property, use the map method to create a new array containing only the names.
+{
+    console.log("Given an array of objects with a name property, use the map method to create a new array containing only the names")
+
+    let obj = [
+        {
+            name : "manasa",
+            rollno : 19
+
+        },
+
+        {
+            name : " sunisha ",
+            rollno : 21
+        }
+        
+    ];
+    console.log(" object :",obj);
+    let namearray = obj.map(obj => obj.rollno);
+
+    console.log("array of names : ",namearray)
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
