@@ -496,7 +496,96 @@ console.log("sum : ",sum);
 console.log("\n\n\n\n\n");
 
 }
+
+
+
+
+
+
+
+{
+console.log("\n\n\n\n\n");
+
+//call//apply//bind
+
+console.log("this : ",this);
+
+let obj = {
+    name :"manasa",
+    age : 20,
+getAge : function (){
+    console.log("this : ",this);
+    console.log("ahe : ",age);
+}
+}
+
+obj.getAge ();
+
+console.log("\n\n\n\n\n");
+
+function Greeting (message1,message2){
+    console.log("message1 : ",message1);
+    console.log("message2 ",message2);
+
+    console.log("this :",message1)
+    console.log("this.name : ",this.name);
+    console.log("this.age :".this.age);
+    
+}
+// Greeting("hello","welcome");
+// Greeting.call(obj ,["hello","welcome"]);
+
+let bindedFunction = Greeting.bind(obj,"hello","welcome");
+console.log("bindedfunction :",bindedFunction);
+bindedFunction();
+}
+
+
+
+
+{
+    console.log("\n\n\n\n\n");
+
+    //constructor function
+ function person(name,age,number){
+    this.name = name;
+    this.age = age;
+    this.mark = mark;
+    this.Greeting = function(){
+        console.log(`hello ${this.name},you are ${this.age},year old.`)
+    }
+ }
+
+ let person = new person("manasa",19,8479236304);
+ console.log("person :",person);
+ person.Greeting();
+
+
+ let person1=new person("midhun",26,5673409467);
+ console.log("person1",person1);
+ person1.Greeting();
+
+ person1.city = "canada";
+ person1.getAge = function(){
+    console,log(`hi ${this.name},is ${this.number},your number ?`)
+ }
+ person1.getAge();
+
+
+ person.prototype.getNumber = function(){
+    console.log(`hi ${this.name},your age is ${this.age}`)
+}
+
+person.getAge();
+person1.getNumber();
+ }
  
+
+
+ 
+
+
+
 
     
 
