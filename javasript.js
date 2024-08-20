@@ -364,7 +364,7 @@ console.log("\n\n\n\n\n\n")
 {
     console.log("Given an array of objects with a name property, use the map method to create a new array containing only the names")
 
-    let obj = [
+    let property = [
         {
             name : "manasa",
             rollno : 19
@@ -377,8 +377,8 @@ console.log("\n\n\n\n\n\n")
         }
         
     ];
-    console.log(" object :",obj);
-    let namearray = obj.map(obj => obj.rollno);
+    console.log(" object :",property);
+    let namearray = property.map(property => property.name);
 
     console.log("array of names : ",namearray)
     
