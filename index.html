@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+
+    <div class="counter">
+        <h2>First Counter</h2>
+        <h1 id="firstCounter">0</h1>
+        <div class="btn">
+            <button onclick="decrease('firstCounter')">DECREASE</button>
+            <button onclick="resetCounter('firstCounter', 0)">RESET</button>
+            <button onclick="increase('firstCounter')">INCREASE</button>
+        </div>
+    </div>
+    
+
+    <br><br>
+
+   
+    <div class="counter">
+        <h2>Second Counter</h2>
+        <h1 id="secondCounter">0</h1>
+        <div class="btn">
+            <button onclick="decrease('secondCounter')">DECREASE</button>
+            <button onclick="resetCounter('secondCounter', 0)">RESET</button>
+            <button onclick="increase('secondCounter')">INCREASE</button>
+        </div>
+    </div>
+
+   
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
