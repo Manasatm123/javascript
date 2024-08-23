@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+button {
+    padding: 10px;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.btn{
+    height:200px ;
+    width: 300px;
+    margin: auto;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+button.dark-mode {
+    background-color: palevioletred;
+}
